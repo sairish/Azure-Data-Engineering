@@ -2,7 +2,7 @@
 
 #### I'm thrilled to share details about a recent Azure Data Engineering project I worked on, focused on building a robust and scalable data platform using the Medallion Architecture.
 
-#### This project involved several key components:
+#### This project includes several key components:
 
 1. **Data Sources:** We ingested batch data from diverse sources, including HTTPS endpoints and SQL databases.
 2. **Azure Data Factory (ADF):** We used ADF to create pipelines for the continuous ingestion of data into Azure Data Lake Storage Gen2 (ADLS Gen2). This initial landing zone in ADLS Gen2 served as our Bronze layer, storing the raw data in CSV format.

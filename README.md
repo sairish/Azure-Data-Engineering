@@ -23,7 +23,7 @@ A medallion architecture is a data design pattern used to logically organize dat
 **The Gold layer**, is a curated data warehouse optimized for analysis and reporting. \
 This layered approach offers several key benefits, including ensuring data quality through progressive refinement, enabling efficient data processing by separating concerns, and simplifying data governance through a structured approach.
 
-
+![Medallion Architecture](https://github.com/sairish/Azure-Data-Engineering/blob/main/Support%20Images/Meallion%20Architecture.png)
 
 ## Dats Source ER Diagram
 

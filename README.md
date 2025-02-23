@@ -37,3 +37,38 @@ For this project, I leveraged the following Azure services:
 
 
 ![Dats Source ER Diagram](https://github.com/sairish/Azure-Data-Engineering/blob/main/Data%20Source/Ecomm%20Dataset%20ER%20Diagram.png)
+
+**What I Did (Project Details):**
+
+*   **Data Ingestion (Bronze Layer):**
+    *   Ingested batch data from diverse sources, including HTTPS endpoints (e.g., product catalogs, customer reviews) and SQL databases (e.g., transactional data, inventory).
+    *   Utilized **Azure Data Factory (ADF)** to create and manage data pipelines for continuous ingestion.
+    *   Landed raw data in CSV format into **Azure Data Lake Storage Gen2 (ADLS Gen2)**, designated as the Bronze layer.
+
+*   **Data Transformation (Silver Layer):**
+    *   Leveraged **Azure Databricks** and **Apache Spark** for data processing and transformation.
+    *   Read data from the Bronze layer in ADLS Gen2.
+    *   Performed data cleaning, standardization, and enrichment (e.g., handling missing values, data type conversions, joining data from different sources).
+    *   Converted the data from CSV to **Parquet format** for optimized storage and query performance.
+    *   Stored the transformed data in ADLS Gen2, designated as the Silver layer.
+
+*   **Data Warehousing (Gold Layer):**
+    *   Utilized **Azure Synapse Analytics** as the data warehouse.
+    *   Ingested data from the Silver layer in ADLS Gen2 into Synapse.
+    *   Designed and implemented a **star schema** optimized for analytical queries.
+    *   Created tables, views, and stored procedures to support reporting and analysis.
+
+*   **Data Visualization and Reporting:**
+    *   Connected **Power BI** to the Azure Synapse Analytics data warehouse.
+    *   Developed interactive dashboards and reports to visualize key metrics and provide business insights.
+    *   Enabled users to explore the data and gain actionable intelligence.
+
+**Optimization Techniques Used:**
+
+*   **Parquet Format:** Converting data to Parquet in Databricks significantly improved query performance in Synapse due to its columnar storage and efficient compression.
+*   **Data Partitioning:** Proper partitioning of data in Databricks and Synapse based on relevant criteria (e.g., date, region) optimized data processing and query execution by reducing the amount of data scanned.
+*   **Spark Optimization:** Tuning Spark configurations, such as executor memory, driver memory, and number of executors, ensured efficient resource utilization and minimized processing time. This included careful consideration of shuffle operations and data skew.
+*   **ADF Pipeline Optimization:** Optimizing ADF pipelines, including concurrency settings, data flow configurations, and appropriate use of activities like Copy Data and Data Flows, ensured seamless and efficient data ingestion.
+*   **Synapse Performance Tuning:** Optimized Synapse performance through techniques like proper indexing (e.g., clustered columnstore indexes), distribution strategies, and materialized views where appropriate.
+
+

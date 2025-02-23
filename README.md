@@ -38,7 +38,7 @@ For this project, I leveraged the following Azure services:
 
 ![Dats Source ER Diagram](https://github.com/sairish/Azure-Data-Engineering/blob/main/Data%20Source/Ecomm%20Dataset%20ER%20Diagram.png)
 
-**What I Did (Project Details):**
+## What I Did (Project Details):
 
 *   **Data Ingestion (Bronze Layer):**
     *   Ingested batch data from diverse sources, including HTTPS endpoints (e.g., product catalogs, customer reviews) and SQL databases (e.g., transactional data, inventory).
@@ -63,7 +63,7 @@ For this project, I leveraged the following Azure services:
     *   Developed interactive dashboards and reports to visualize key metrics and provide business insights.
     *   Enabled users to explore the data and gain actionable intelligence.
 
-**Optimization Techniques Used:**
+## Optimization Techniques Used:
 
 *   **Parquet Format:** Converting data to Parquet in Databricks significantly improved query performance in Synapse due to its columnar storage and efficient compression.
 *   **Data Partitioning:** Proper partitioning of data in Databricks and Synapse based on relevant criteria (e.g., date, region) optimized data processing and query execution by reducing the amount of data scanned.
@@ -71,4 +71,13 @@ For this project, I leveraged the following Azure services:
 *   **ADF Pipeline Optimization:** Optimizing ADF pipelines, including concurrency settings, data flow configurations, and appropriate use of activities like Copy Data and Data Flows, ensured seamless and efficient data ingestion.
 *   **Synapse Performance Tuning:** Optimized Synapse performance through techniques like proper indexing (e.g., clustered columnstore indexes), distribution strategies, and materialized views where appropriate.
 
+## Snippet of the project:
 
+**Data Piepline:**
+![Data Pipeline](https://github.com/sairish/Azure-Data-Engineering/blob/main/Support%20Images/Data%20Pipeline.png)
+
+**ADLS Storage:**
+![ADLS Storage](https://github.com/sairish/Azure-Data-Engineering/blob/main/Support%20Images/Storage%20Layer.png)
+
+**Azure Synapse:**
+![Azure Synapse](https://github.com/sairish/Azure-Data-Engineering/blob/main/Support%20Images/Azure%20Synapse.png)

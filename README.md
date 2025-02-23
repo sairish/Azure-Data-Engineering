@@ -2,18 +2,12 @@
 
 #### I'm thrilled to share details about a recent Azure Data Engineering project I worked on, focused on building a robust and scalable data platform using the Medallion Architecture.
 
-#### This project includes several key components:
-
-1. **Data Sources:** We ingested batch data from diverse sources, including HTTPS endpoints and SQL databases.
-2. **Azure Data Factory (ADF):** We used ADF to create pipelines for the continuous ingestion of data into Azure Data Lake Storage Gen2 (ADLS Gen2). This initial landing zone in ADLS Gen2 served as our Bronze layer, storing the raw data in CSV format.
-3. **Data Processing in Azure Databricks:**  Leveraging the power of Apache Spark, we processed and transformed the Bronze layer data within Azure Databricks.  Importantly, we converted the CSV files to Parquet format for optimized performance during processing. This transformed data was then stored in another ADLS Gen2 location, acting as our Silver layer.
-4. **Data Warehousing with Azure Synapse Analytics:**  The Silver layer data was then ingested into Azure Synapse Analytics, our data warehousing solution.  This formed the Gold layer, providing a curated and optimized dataset for analysis.
-5. **Data Visualization with Power BI:**  Finally, we connected Power BI to Azure Synapse Analytics to create interactive dashboards, enabling business users to gain valuable insights from the data.
+This project focused on building a complete data platform on **Azure** to ingest and process **e-commerce data** for insightful analysis.  Using the **Medallion Architecture**, I ingested data from various sources into a Bronze layer in **ADLS Gen2**, transformed it in **Databricks** and stored it in a Silver layer, and finally loaded it into a **Synapse data warehouse** (Gold layer) for **Power BI** reporting.  This end-to-end process enabled efficient data analysis and visualization, ultimately providing valuable insights into e-commerce performance.
 
 ## Project Architecture
 
 
-![](https://github.com/sairish/Azure-Data-Engineering/blob/main/Architecture%20Diagrams/Azure%20ArchitectureGif.gif)
+![Project Architecture](https://github.com/sairish/Azure-Data-Engineering/blob/main/Architecture%20Diagrams/Azure%20ArchitectureGif.gif)
 
 This platform is built upon the Medallion Architecture, a proven approach for constructing scalable and maintainable data lakes.
 ## So What is a medallion architecture?
@@ -25,7 +19,21 @@ This layered approach offers several key benefits, including ensuring data quali
 
 ![Medallion Architecture](https://github.com/sairish/Azure-Data-Engineering/blob/main/Support%20Images/Meallion%20Architecture.png)
 
+For this project, I leveraged the following Azure services:
+
+*   **Azure Data Factory (ADF):**  ADF served as the orchestration engine for my data pipelines.  It allowed me to create and manage the workflows for ingesting data from various sources into the Bronze layer of my data lake.  I used ADF to connect to HTTPS endpoints and SQL databases, extract data, and load it into ADLS Gen2.
+
+*   **Azure Data Lake Storage Gen2 (ADLS Gen2):** ADLS Gen2 acted as the foundation of my data lake.  It provided a scalable and cost-effective storage solution for both raw and processed data.  I used ADLS Gen2 to store the data in the Bronze and Silver layers, taking advantage of its hierarchical namespace and integration with other Azure services.
+
+*   **Azure Databricks:** Databricks, a unified analytics platform powered by Apache Spark, was instrumental in processing and transforming the data. I used Databricks to read data from the Bronze layer in ADLS Gen2, perform data cleansing and transformations using Python and Spark, and then write the processed data to the Silver layer in ADLS Gen2.  A key aspect of this stage was converting the data to Parquet format for optimized performance.
+
+*   **Azure Synapse Analytics:**  Synapse Analytics served as my data warehouse.  I used Synapse to ingest data from the Silver layer in ADLS Gen2 and create a curated data warehouse (Gold layer) optimized for analytical queries and reporting.  This involved designing a star schema and implementing efficient data loading processes.
+
+*   **Power BI:** Power BI was used for data visualization and reporting. I connected Power BI to the Azure Synapse Analytics data warehouse to create interactive dashboards and reports, providing business users with valuable insights derived from the data.
+
+
+
 ## Dats Source ER Diagram
 
 
-![](https://github.com/sairish/Azure-Data-Engineering/blob/main/Data%20Source/Ecomm%20Dataset%20ER%20Diagram.png)
+![Dats Source ER Diagram](https://github.com/sairish/Azure-Data-Engineering/blob/main/Data%20Source/Ecomm%20Dataset%20ER%20Diagram.png)

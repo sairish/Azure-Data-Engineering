@@ -38,7 +38,7 @@ For this project, I leveraged the following Azure services:
 
 ![Dats Source ER Diagram](https://github.com/sairish/Azure-Data-Engineering/blob/main/Data%20Source/Ecomm%20Dataset%20ER%20Diagram.png)
 
-## What I Did (Project Details):
+## Project Details:
 
 *   **Data Ingestion (Bronze Layer):**
     *   Ingested batch data from diverse sources, including HTTPS endpoints (e.g., product catalogs, customer reviews) and SQL databases (e.g., transactional data, inventory).

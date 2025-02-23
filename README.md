@@ -35,10 +35,10 @@ For this project, I leveraged the following Azure services:
 
 ## Dats Source ER Diagram
 The data for this project came from various sources, representing core aspects of an e-commerce platform:
-*   **[Orders:](https://github.com/sairish/E-Comm_Data_Engineering_on_Azure_Cloud_Platform/blob/main/Data%20Source/customers.csv)** Detailed information about each order placed, including order date, items purchased, total amount, shipping details, etc.
+*   **Orders:** Detailed information about each order placed, including order date, items purchased, total amount, shipping details, etc.
 *   **Customers:** Customer profiles, including demographics, contact information, and other relevant details.
 *   **Products:** Product catalog data, including product names, descriptions, prices, categories.
-*   Access the data from - [DataSource]
+*   Access the data here - [DataSource](Data%20Source/)
 
 ![Dats Source ER Diagram](https://github.com/sairish/Azure-Data-Engineering/blob/main/Data%20Source/Ecomm%20Dataset%20ER%20Diagram.png)
 

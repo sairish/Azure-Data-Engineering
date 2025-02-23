@@ -38,7 +38,7 @@ The data for this project came from various sources, representing core aspects o
 *   **Orders:** Detailed information about each order placed, including order date, items purchased, total amount, shipping details, etc.
 *   **Customers:** Customer profiles, including demographics, contact information, and other relevant details.
 *   **Products:** Product catalog data, including product names, descriptions, prices, categories.
-*   Access the data here - [DataSource](Data%20Source/)
+*   The data is available at - [DataSource](Data%20Source/)
 
 ![Dats Source ER Diagram](https://github.com/sairish/Azure-Data-Engineering/blob/main/Data%20Source/Ecomm%20Dataset%20ER%20Diagram.png)
 
@@ -85,3 +85,7 @@ The data for this project came from various sources, representing core aspects o
 
 **Azure Synapse:**
 ![Azure Synapse](https://github.com/sairish/Azure-Data-Engineering/blob/main/Support%20Images/Azure%20Synapse.png)
+
+## Get in Touch: 
+
+**Thank you!** for taking the time to explore my project. If you'd like to discuss opportunities, collaborate on projects, or simply connect, please feel free to reach out on [Linkedin](https://www.linkedin.com/in/venkatasairishitha) and do visit [My Portfolio](https://sairish.github.io/) for more details about my experience. I look forward to hearing from you! 👋

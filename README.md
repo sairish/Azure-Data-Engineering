@@ -2,7 +2,7 @@
 ## Building a Scalable Data Platform with the Medallion Architecture on Azure
 #### I'm thrilled to share details about a recent Azure Data Engineering project I worked on, focused on building a robust and scalable data platform using the Medallion Architecture.
 
-This project focused on building a complete data platform on **Azure** to ingest and process **e-commerce data** for insightful analysis.  Using the **Medallion Architecture**, I ingested data from various sources into a Bronze layer in **ADLS Gen2**, transformed it in **Databricks** and stored it in a Silver layer, and finally loaded it into a **Synapse data warehouse** (Gold layer) for **Power BI** reporting.  This end-to-end process enabled efficient data analysis and visualization, ultimately providing valuable insights into e-commerce performance.
+This project focused on building a complete data platform on **Azure** to ingest and process **e-commerce data** for insightful analysis.  Following the **Medallion Architecture**, I have created an ETL pipelint uinsg **Azure Data Factory** to ingest raw data from various sources into a Bronze layer in **ADLS Gen2**, transformed it in **Databricks** and stored it in a Silver layer, and finally loaded it into a **Synapse data warehouse** (Gold layer) for **Power BI** reporting.  This end-to-end process enabled efficient data analysis and visualization, ultimately providing valuable insights into e-commerce performance.
 
 ## Project Architecture
 
